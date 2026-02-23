@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Payslip Distribution System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-animation"></div>
+
+<div class="card">
+    <h1>Online Payslip Portal</h1>
+    <p class="subtitle">Secure & Paperless Salary Access</p>
+
+    <div class="form-group">
+        <label>Contract Name</label>
+        <select id="contract">
+            <option value="SMSE JASMINE">SMSE JASMINE</option>
+            <option value="SMSE MG">SMSE MG</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Month</label>
+        <select id="month">
+            <option value="January">January</option>
+            <option value=" ">February</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Year</label>
+        <select id="year">
+            <option value="2026">2026</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Employee ID</label>
+        <input type="text" id="empId" placeholder="Enter Employee ID">
+    </div>
+
+    <button onclick="searchPayslip()">Search Payslip</button>
+
+    <div id="result" class="result-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
