@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Online Payslip Distribution System</title>
+    <meta charset="UTF-8">
+    <title>Online Payslip Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="background-animation"></div>
-
 <div class="card">
-    <h1>Online Payslip Portal</h1>
-    <p class="subtitle">Secure & Paperless Salary Access</p>
+    <h2>Online Payslip Portal</h2>
+    <p class="subtitle">Secure Salary Access System</p>
 
-    <div class="form-group">
-        <label>Contract Name</label>
-        <select id="contract">
-            <option value="SMSE JASMINE">SMSE JASMINE</option>
-            <option value="SMSE MG">SMSE MG</option>
-        </select>
-    </div>
+    <label>Contract</label>
+    <select id="contract">
+        <option value="SMSE-JASMINE">SMSE-JASMINE</option>
+        <option value="SMSE-MG">SMSE-MG</option>
+    </select>
 
-    <div class="form-group">
-        <label>Month</label>
-        <select id="month">
-            <option value="January">January</option>
-            <option value=" ">February</option>
-        </select>
-    </div>
+    <label>Month</label>
+    <select id="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
 
-    <div class="form-group">
-        <label>Year</label>
-        <select id="year">
-            <option value="2026">2026</option>
-        </select>
-    </div>
+    <label>Year</label>
+    <select id="year">
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025" selected>2025</option>
+        <option value="2026">2026</option>
+    </select>
 
-    <div class="form-group">
-        <label>Employee ID</label>
-        <input type="text" id="empId" placeholder="Enter Employee ID">
-    </div>
+    <label>Employee ID</label>
+    <input type="text" id="empId" placeholder="Enter Employee ID">
 
     <button onclick="searchPayslip()">Search Payslip</button>
 
-    <div id="result" class="result-box"></div>
+    <div id="loader" class="loader"></div>
+    <div id="result"></div>
 </div>
 
 <script src="script.js"></script>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #667eea);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px;
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #6a11cb;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #777;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+select:focus, input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106,17,203,0.3);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#loader {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #444;
+    display: none;
+}
+
+.success {
+    margin-top: 18px;
+    background: #e6fff2;
+    color: #0a7f42;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.error {
+    margin-top: 18px;
+    background: #ffe6e6;
+    color: #c0392b;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
